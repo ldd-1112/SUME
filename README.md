@@ -2,17 +2,17 @@
 
 A powerful AI-powered text summarization tool built with Gradio and Google's Gemini AI. SUME can summarize text from multiple sources including direct input, files, web pages, and media content.
 
-## ✨ Features
+## Features
 
-- **📝 Text Summarization**: Summarize any text input using Google's Gemini AI
-- **📄 File Processing**: Support for TXT, MD, PDF, DOCX files
-- **🌐 Web Content**: Extract and summarize web articles from URLs
-- **🎵 Media Processing**: Audio/video transcription and summarization
-- **🌍 Translation**: Multi-language support (English, Vietnamese, French, Spanish)
-- **🎯 Custom Extensions**: Extend summaries with specific focus areas
-- **⚡ Performance**: Built-in caching for faster processing
+- **Text Summarization**: Summarize any text input using Google's Gemini AI
+- **File Processing**: Support for TXT, MD, PDF, DOCX files
+- **Web Content**: Extract and summarize web articles from URLs
+- **Media Processing**: Audio/video transcription and summarization
+- **Translation**: Multi-language support (English, Vietnamese, French, Spanish)
+- **Custom Extensions**: Extend summaries with specific focus areas
+- **Performance**: Built-in caching for faster processing
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -55,7 +55,7 @@ GOOGLE_API_KEY=your_google_api_key_here
 GOOGLE_APPLICATION_CREDENTIALS=your_service_account_file.json
 ```
 
-## 📖 Usage
+## Usage
 
 ### Text Summarization
 1. **Direct Text**: Paste your text directly into the input field
@@ -91,7 +91,7 @@ sume/
 └── README.md          # This file
 ```
 
-## 🔧 Requirements
+## Requirements
 
 - `google-generativeai` - Google Gemini AI
 - `gradio` - Web interface
@@ -104,7 +104,7 @@ sume/
 - `beautifulsoup4` - HTML parsing
 - `python-dotenv` - Environment variables
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -129,4 +129,4 @@ If you encounter any issues or have questions, please open an issue on GitHub.
 
 ---
 
-**Made with ❤️ by ldd-1112**
+**Made with by ldd-1112**
