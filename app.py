@@ -1,5 +1,5 @@
 import gradio as gr
-from backend import summarize_text, extend_summary, extend_summary_custom, translate_text, get_text_from_url, clear_cache, get_cache_stats, summarize_file
+from backend import summarize_text, extend_summary, extend_summary_custom, translate_text, get_text_from_url, clear_cache, get_cache_stats, summarize_file, languages_list
 with gr.Blocks(theme=gr.themes.Soft()) as demo:
     gr.HTML("""
     <style>
@@ -47,7 +47,7 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
                         custom_extend_confirm_text = gr.Button("Extend with Details", variant="primary")
                     
                     extended_output_text = gr.Textbox(label="Extended Summary", lines=10)
-                    translate_lang_text = gr.Dropdown(["English","Vietnamese","French","Spanish"], label="Translate to")
+                    translate_lang_text = gr.Dropdown(languages_list, label="Translate to", allow_custom_value=True, value="English")
                     translate_btn_text = gr.Button("Translate")
                     translated_output_text = gr.Textbox(label="Translation", lines=10)
 
@@ -93,7 +93,7 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
                         custom_extend_confirm_text_file = gr.Button("Extend with Details", variant="primary")
                     
                     extended_output_text_file = gr.Textbox(label="Extended Summary", lines=10)
-                    translate_lang_text_file = gr.Dropdown(["English","Vietnamese","French","Spanish"], label="Translate to")
+                    translate_lang_text_file = gr.Dropdown(languages_list, label="Translate to", allow_custom_value=True, value="English")
                     translate_btn_text_file = gr.Button("Translate")
                     translated_output_text_file = gr.Textbox(label="Translation", lines=10)
 
@@ -149,7 +149,7 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
                         custom_extend_confirm_url = gr.Button("Extend with Details", variant="primary")
                     
                     extended_output_url = gr.Textbox(label="Extended Summary", lines=10)
-                    translate_lang_url = gr.Dropdown(["English","Vietnamese","French","Spanish"], label="Translate to")
+                    translate_lang_url = gr.Dropdown(languages_list, label="Translate to", allow_custom_value=True, value="English")
                     translate_btn_url = gr.Button("Translate")
                     translated_output_url = gr.Textbox(label="Translation", lines=10)
 
@@ -206,7 +206,7 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
                         custom_extend_confirm_media_url = gr.Button("Extend with Details", variant="primary")
                     
                     extended_output_media_url = gr.Textbox(label="Extended Summary", lines=10)
-                    translate_lang_media_url = gr.Dropdown(["English","Vietnamese","French","Spanish"], label="Translate to")
+                    translate_lang_media_url = gr.Dropdown(languages_list, label="Translate to", allow_custom_value=True, value="English")
                     translate_btn_media_url = gr.Button("Translate")
                     translated_output_media_url = gr.Textbox(label="Translation", lines=10)
 
@@ -260,7 +260,7 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
                         custom_extend_confirm_media = gr.Button("Extend with Details", variant="primary")
                     
                     extended_output_media = gr.Textbox(label="Extended Summary", lines=10)
-                    translate_lang_media = gr.Dropdown(["English","Vietnamese","French","Spanish"], label="Translate to")
+                    translate_lang_media = gr.Dropdown(languages_list, label="Translate to", allow_custom_value=True, value="English")
                     translate_btn_media = gr.Button("Translate")
                     translated_output_media = gr.Textbox(label="Translation", lines=10)
 
