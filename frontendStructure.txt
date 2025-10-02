@@ -1,0 +1,23 @@
+SUME - Smart Summarizer
+├── Text Processing Tab
+│   ├── Direct Text Sub-tab
+│   │   ├── Text input area
+│   │   ├── Summarize button
+│   │   ├── Extend Summary button
+│   │   └── Translate button
+│   └── Webpage URL Sub-tab
+│       ├── URL input field
+│       ├── Summarize button
+│       ├── Extend Summary button
+│       └── Translate button
+└── Media Processing Tab
+    ├── Media URL Sub-tab
+    │   ├── Media URL input (YouTube, etc.)
+    │   ├── Summarize button
+    │   ├── Extend Summary button
+    │   └── Translate button
+    └── File Upload Sub-tab
+        ├── File upload area (Audio/Video)
+        ├── Summarize button
+        ├── Extend Summary button
+        └── Translate button

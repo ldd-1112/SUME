@@ -1,0 +1,11 @@
+google-generativeai
+pydub
+yt-dlp
+openai-whisper
+trafilatura
+requests
+gradio
+PyPDF2
+python-docx
+beautifulsoup4
+python-dotenv
