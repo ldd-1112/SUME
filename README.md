@@ -24,8 +24,8 @@ A powerful AI-powered text summarization tool built with Gradio and Google's Gem
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/ldd-1112/sume.git
-cd sume
+git clone https://github.com/ldd-1112/SUME.git
+cd SUME
 ```
 
 2. **Install dependencies:**
@@ -69,7 +69,14 @@ GOOGLE_APPLICATION_CREDENTIALS=your_service_account_file.json
 - **Translation**: Translate summaries to multiple languages
 - **Cache Management**: Clear cache and view statistics
 
-## 🛠️ Technical Details
+### Screenshots
+The application provides a clean, intuitive interface with:
+- Tabbed interface for different input types
+- Real-time processing indicators
+- Easy-to-use controls for all features
+- Responsive design that works on all devices
+
+## Technical Details
 
 - **Frontend**: Gradio with modern UI
 - **AI Model**: Google Gemini 2.5 Flash
@@ -78,17 +85,24 @@ GOOGLE_APPLICATION_CREDENTIALS=your_service_account_file.json
 - **Media Processing**: yt-dlp, pydub
 - **File Processing**: PyPDF2, python-docx
 
-## 📁 Project Structure
+## Project Structure
 
 ```
-sume/
-├── app.py              # Main Gradio application
-├── backend.py          # AI processing and API calls
-├── file_reader.py      # File processing utilities
-├── requirements.txt    # Python dependencies
-├── .env.example       # Environment variables template
-├── .gitignore         # Git ignore rules
-└── README.md          # This file
+SUME/
+├── app.py                 # Main Gradio application
+├── backend/               # Backend modules
+│   ├── __init__.py       # Package initialization
+│   ├── config.py         # API and model configuration
+│   ├── ai_services.py    # AI/ML services (summarization, translation)
+│   ├── media_processor.py # Audio/video processing
+│   ├── web_scraper.py    # Web content extraction
+│   ├── cache_manager.py  # Caching functionality
+│   └── file_reader.py    # File processing utilities
+├── requirements.txt       # Python dependencies
+├── .env.example          # Environment variables template
+├── .gitignore            # Git ignore rules
+├── LICENSE               # MIT License
+└── README.md             # This file
 ```
 
 ## Requirements
@@ -104,29 +118,17 @@ sume/
 - `beautifulsoup4` - HTML parsing
 - `python-dotenv` - Environment variables
 
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Google Gemini AI for powerful text processing
 - Gradio for the beautiful web interface
 - OpenAI Whisper for speech recognition
 - All the open-source libraries that make this possible
 
-## 📞 Support
-
-If you encounter any issues or have questions, please open an issue on GitHub.
-
 ---
 
-**Made with by ldd-1112**
+**Made with ❤️ by ldd-1112**

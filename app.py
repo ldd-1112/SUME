@@ -1,6 +1,5 @@
 import gradio as gr
 from backend import summarize_text, extend_summary, extend_summary_custom, translate_text, get_text_from_url, clear_cache, get_cache_stats, summarize_file
-
 with gr.Blocks(theme=gr.themes.Soft()) as demo:
     gr.HTML("""
     <style>
@@ -294,4 +293,9 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
                     ).then(fn=hide_custom_extend_media, outputs=custom_extend_group_media)
                     translate_btn_media.click(fn=translate_text, inputs=[summary_output_media, translate_lang_media], outputs=translated_output_media)
 
-demo.launch()
+def main():
+    """Main entry point for SUME application"""
+    demo.launch()
+
+if __name__ == "__main__":
+    main()
