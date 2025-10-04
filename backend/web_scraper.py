@@ -7,7 +7,7 @@ import trafilatura
 from .cache_manager import cache_result
 from .media_processor import transcribe_media_url
 
-@cache_result
+@cache_result()
 def extract_article_main_text(url: str) -> str:
     """Extract main text content from a webpage URL"""
     try:
@@ -21,7 +21,7 @@ def extract_article_main_text(url: str) -> str:
     except Exception as e:
         return f"⚠️ Error extracting text: {e}"
 
-@cache_result
+@cache_result()
 def get_text_from_url(url: str, source_type: str) -> str:
     """Get text content from URL based on source type"""
     if source_type == "Webpage":

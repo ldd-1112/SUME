@@ -7,7 +7,7 @@ from .cache_manager import cache_result
 from .file_reader import extract_text_from_file, chunk_text
 
 # --- Summarize, Extend, Translate ---
-@cache_result
+@cache_result()
 def summarize_text(input_text: str) -> str:
     """Summarize input text using Google Gemini"""
     try:
@@ -35,7 +35,7 @@ def summarize_file(file_path):
     final_summary = "\n\n".join(summaries)
     return final_summary
 
-@cache_result
+@cache_result()
 def extend_summary(summary_text: str) -> str:
     """Extend a summary with more details"""
     try:
@@ -44,7 +44,7 @@ def extend_summary(summary_text: str) -> str:
     except Exception as e:
         return f"⚠️ Extend summary error: {e}"
 
-@cache_result
+@cache_result()
 def extend_summary_custom(summary_text: str, custom_prompt: str) -> str:
     """Extend a summary with custom focus areas"""
     try:
@@ -54,7 +54,7 @@ def extend_summary_custom(summary_text: str, custom_prompt: str) -> str:
     except Exception as e:
         return f"⚠️ Custom extend summary error: {e}"
 
-@cache_result
+@cache_result()
 def translate_text(summary_text: str, target_lang: str) -> str:
     """Translate text to target language"""
     try:

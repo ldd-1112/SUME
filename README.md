@@ -34,9 +34,11 @@ pip install -r requirements.txt
 ```
 
 3. **Set up environment variables:**
+Create a `.env` file in the project root:
 ```bash
-cp .env.example .env
-# Edit .env with your API keys
+# Create .env file
+touch .env
+# Edit .env with your API keys (see Configuration section below)
 ```
 
 4. **Run the application:**
@@ -97,9 +99,10 @@ SUME/
 │   ├── media_processor.py # Audio/video processing
 │   ├── web_scraper.py    # Web content extraction
 │   ├── cache_manager.py  # Caching functionality
-│   └── file_reader.py    # File processing utilities
+│   ├── file_reader.py    # File processing utilities
+│   ├── validation.py     # Input validation utilities
+│   └── languages.py      # Language support definitions
 ├── requirements.txt       # Python dependencies
-├── .env.example          # Environment variables template
 ├── .gitignore            # Git ignore rules
 ├── LICENSE               # MIT License
 └── README.md             # This file
@@ -117,6 +120,7 @@ SUME/
 - `python-docx` - Word document processing
 - `beautifulsoup4` - HTML parsing
 - `python-dotenv` - Environment variables
+- `requests` - HTTP requests
 
 ## License
 
